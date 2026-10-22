@@ -16,7 +16,7 @@ const bank = context.__BANK;
 const expectedCounts = {
   amontillado: 49,
   dangerous: 76,
-  casey: 47,
+  casey: 37,
   kite: 55
 };
 const errors = [];
@@ -53,7 +53,7 @@ for (const q of bank) {
   prompts.add(prompt);
 }
 
-if (bank.length !== 227) errors.push(`Expected 227 questions, found ${bank.length}`);
+if (bank.length !== 217) errors.push(`Expected 217 questions, found ${bank.length}`);
 for (const [unit, expected] of Object.entries(expectedCounts)) {
   if (actualCounts[unit] !== expected) {
     errors.push(`${unit}: expected ${expected} questions, found ${actualCounts[unit] || 0}`);
