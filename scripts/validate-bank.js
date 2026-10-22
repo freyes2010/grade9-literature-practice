@@ -14,10 +14,10 @@ vm.runInNewContext(source, context);
 const bank = context.__BANK;
 
 const expectedCounts = {
-  amontillado: 42,
-  dangerous: 75,
-  casey: 39,
-  kite: 46
+  amontillado: 47,
+  dangerous: 80,
+  casey: 44,
+  kite: 51
 };
 const errors = [];
 const ids = new Set();
@@ -53,7 +53,7 @@ for (const q of bank) {
   prompts.add(prompt);
 }
 
-if (bank.length !== 202) errors.push(`Expected 202 questions, found ${bank.length}`);
+if (bank.length !== 222) errors.push(`Expected 222 questions, found ${bank.length}`);
 for (const [unit, expected] of Object.entries(expectedCounts)) {
   if (actualCounts[unit] !== expected) {
     errors.push(`${unit}: expected ${expected} questions, found ${actualCounts[unit] || 0}`);
