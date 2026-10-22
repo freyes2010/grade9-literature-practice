@@ -17,7 +17,7 @@ const expectedCounts = {
   amontillado: 49,
   dangerous: 82,
   casey: 46,
-  kite: 58
+  kite: 53
 };
 const errors = [];
 const ids = new Set();
