@@ -15,9 +15,9 @@ const bank = context.__BANK;
 
 const expectedCounts = {
   amontillado: 41,
-  dangerous: 68,
+  dangerous: 69,
   casey: 40,
-  kite: 35
+  kite: 36
 };
 const errors = [];
 const ids = new Set();
