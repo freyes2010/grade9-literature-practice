@@ -3,7 +3,7 @@ const vm = require("node:vm");
 
 const html = fs.readFileSync("index.html", "utf8");
 const start = html.indexOf("const BANK = [");
-const end = html.indexOf("];", start);
+const end = html.indexOf("\n];", start);
 if (start < 0 || end < 0) {
   throw new Error("Could not locate the BANK array in index.html.");
 }
