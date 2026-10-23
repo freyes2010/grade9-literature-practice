@@ -8,7 +8,7 @@ if (start < 0 || end < 0) {
   throw new Error("Could not locate the BANK array in index.html.");
 }
 
-const source = html.slice(start, end + 2) + "\n;globalThis.__BANK = BANK;";
+const source = html.slice(start, end + 3) + "\nglobalThis.__BANK = BANK;";
 const context = {};
 vm.runInNewContext(source, context);
 const bank = context.__BANK;
