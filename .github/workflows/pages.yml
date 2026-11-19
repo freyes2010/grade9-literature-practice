@@ -1,4 +1,4 @@
-name: Deploy Literature Practice to GitHub Pages
+name: Deploy Spelling Unit 3 to GitHub Pages
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}spealling/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
